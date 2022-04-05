@@ -1,0 +1,25 @@
+<div style="text-align: center;">
+    <h1>User Details</h1>
+</div>
+  <table class="styled-table">
+    <thead>
+        <tr>
+            <th>UserID</th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataitem of serviceobj.searchdetails" class="active-row">
+            <td>{{dataitem.UserId}}</td>
+            <td>{{dataitem.FirstName}}</td>
+            <td>{{dataitem.Location}}</td>
+            <td>{{dataitem.Age}}</td>  
+        </tr>
+    </tbody>
+
+  </table>
+  <div>
+    <button class="registerbtn" (click)="backtomainpage()">Back</button>
+</div>
